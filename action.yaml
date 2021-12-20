@@ -24,7 +24,7 @@ outputs:
     description: 'message sent to Twitter'
 runs:
   using: docker
-  image: Dockerfile
+  image: docker://ghcr.io/packtpublishing/tweeter:1.0.0
   args:
     - --message
     - "${{ inputs.message }}"
